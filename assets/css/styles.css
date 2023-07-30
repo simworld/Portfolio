@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+/* COLOURS VARIABLES */
+:root {
+    --yinmn-blue: #3b5074;
+    --savoy-blue: #3e63c4; 
+    --true-blue: #3f67c2;
+    --cornflower-blue: #6b9ae1;
+    --ruddy-blue: #82aadf;
+    --powder-blue: #93b1d5;
+    --powder-blue2: #94a9c3; 
+    --platinum: #EDE7E9;
+    --orange: #ff9300;
+
+}
+
+h1 {
+    font-size: clamp(44px, 3vw, 48px);
+  }
+  
+  h2 {
+    font-size: clamp(20px, 2vw, 36px);
+  }
+  h3 {
+    font-size: clamp(18px, 3vw, 24px);
+  }
+  p,
+  ul {
+    font-size: clamp(18px, 1vw, 20px);
+  }
+
+body {
+    /* font-family: FuturaPTExtraBold-Reg, sans-serif; */
+    font-family: 'Rubik', sans-serif;
+    line-height: 1.6;
+}
+
+html, body{
+    overflow-x: hidden;
+    background-color: var(--yinmn-blue);
+    height: 100%;
+    overflow-x: hidden;
+    /* overflow: hidden; */
+}
+
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: var(--orange);
+}
+
+/* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+} */
+
+body {
+    background-image: url('/assets/images/background.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Make the homepage section fill the viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+ul {
+    list-style-type: none;
+}
+
+/*  */
+
+/* Keep the same CSS for .nav-item as before */
+.nav-item {
+    color: var(--platinum);
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 7rem;
+    /* opacity: 0;
+    transition: opacity 0.3s ease-in-out; */
+}
+
+/* New class for the initial animation effect */
+.nav-item.animation-initial {
+    opacity: 1;
+    animation: slideInFromLeft 0.5s ease-in-out;
+}
+
+/* CSS keyframes for slideInFromLeft animation */
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* New class for the bottom animation effect */
+.nav-item.animation {
+    opacity: 1;
+    animation: slideInFromBottom 0.5s ease-in-out;
+}
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.nav-item a {
+    color: inherit; 
+    font-size: inherit; 
+    font-weight: inherit; 
+    line-height: inherit; 
+}
+
+.nav-item a:hover {
+    font-size: 4.1rem;
+    color: var(--orange);
+    padding-left: 10px;
+    transition: padding-left 0.1s ease-in;
+}
+
+.comma {
+    color: var(--cornflower-blue);
+}
+
+.nav-item.one {
+    color: var(--orange);
+}
+
+/* .nav-item.two a {
+    font-size: 50px;
+} */
+
+.nav-item.two.animation {
+    line-height: 1;
+  }
+
+.navigation a {
+    text-decoration: none;
+}
+
+.main-content {
+    width: 100%;
+    max-width: 900px; /* Set a maximum width for the content if desired */
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+.navigation {
+    padding-left: 20px;
+}
+
+.show-menu {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    /* cursor: pointer; */
+    padding: 30px;
+    
+  }
+  
+  /* Jumping animation using keyframes */
+  @keyframes jumpAnimation {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px); /* Adjust this value to control the jump height */
+    }
+  }
+  
+  .show-menu button {
+    animation: jumpAnimation 1s infinite; /* 1s duration, infinite repetition */
+    background: none;
+    color: var(--platinum); /* Optional text color for the button */
+    border: none; /* Optional border for the button */
+    padding: 10px 20px; /* Optional padding for the button */
+    /* border-radius: 5px; */
+  }
+
+
+  
+/* .image img {
+    height: 100%;
+    position: absolute;
+    top: 20px;
+    left: 12px;
+} */
+/* .image img {
+    width: 100%; 
+    Make the image take up all available space
+    height: 100%; 
+    Maintain the image's aspect ratio
+} */
+
+/* ABOUT */
+
+.go-back {
+    position: fixed;
+    top: 20px;
+    left: 80%;
+    transform: translateX(-50%);
+    /* cursor: pointer; */
+    padding: 30px; 
+}
+
+.go-back a {
+    color: var(--platinum);
+    text-decoration: none;
+    font-size: 40px;
+}
+
+.dots{
+    color: var(--cornflower-blue);
+    font-size: 32px;
+}
+
+.slash {
+    color: var(--orange);
+    font-size: 32px;
+
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.about-content h2, h3 {
+    color: var(--yinmn-blue);
+    padding: 20px;
+    padding-bottom: 0;
+}
+
+section.one h1, section.one p{
+    padding: 0px 10px;
+}
+
+section.one p {
+    font-size: 24px;
+    color: var(--platinum);
+}
+
+section.two img {
+    width: 100%;
+    position: relative;
+    top: 10px;
+}
+
+section.three {
+    padding: 15px;
+}
+
+section.three p {
+    color: var(--yinmn-blue);
+    padding: 0 20px;
+}
+
+/* section.three h2, h3, p {
+    padding: 0 30px;
+} */
+
+section.one {
+    min-height: 100%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  }
+  
+section.three {
+    min-height: auto;
+
+    /* min-height: 100%;
+    overflow-y: auto; */
+    background-color: var(--platinum);
+}
+  
+
+
+@media screen and (min-width: 1024px){
+    section.three {
+        padding: 0 30px
+    }
+}
