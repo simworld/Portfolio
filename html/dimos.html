@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DiMOS - Case Study One</title>
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+        <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="../index.html" aria-label="Home">
+          <img
+            src="/assets/images/logo.webp"
+            alt="Logo with no Image"
+            class="logo"
+          >
+        </a>
+
+        <button
+          class="menutoggle"
+          onclick="toggleMenu();"
+          tabindex="0"
+          aria-label="Toggle Menu"
+        >
+          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-x"></i>
+        </button>
+        <ul class="hambuger-navigation">
+          <li tabindex="0">
+            <a href="../index.html" aria-label="Home">Home</a>
+          </li>
+          <li tabindex="0">
+            <a href="about.html" aria-label="About">About</a>
+          </li>
+          <li tabindex="0">
+            <a href="case-studies.html" aria-label="Case Studies"
+              >Case Studies</a
+            >
+          </li>
+          <li tabindex="0">
+            <a href="contact.html" aria-label="Contact">Contact</a>
+          </li>
+          <li tabindex="0">
+            <a href="#" aria-label="Blog">Blog</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="main-content dimos">
+      <section class="one dimos">
+        <h1>DiMOS</h1>
+        <p>A Digital Menu Ordering System</p>
+        <!-- <img src="/assets/images/dimos/dimos-iphone.png" alt="DiMOS" /> -->
+      </section>
+
+      <section class="two dimos image">
+        <img src="/assets/images/dimos/dimos-iphone-oblique.webp" alt="DiMOS" />
+      </section>
+
+      <section class="three">
+        <h2>Overview</h2>
+        <p>
+          The Kitchen Display System and Digital Menu project aims to
+          revolutionize the order management process in small restaurants. By
+          developing a user-friendly interface and incorporating real-time
+          updates, the system seeks to replace traditional paper tickets,
+          eliminate human errors, and provide data insights for efficient
+          decision-making. This case study presents the project's approach, the
+          achieved results, and the overall conclusion.
+        </p>
+
+        <h3>Approach</h3>
+        <p>
+          To create the Kitchen Display System and Digital Menu, a monolithic
+          architecture was adopted to ensure simplicity in development and
+          deployment. The system's frontend was built using HTML, CSS, and
+          JavaScript, with EJS as the templating engine for dynamic content.
+        </p>
+
+        <div class="section-image image">
+
+          <!-- <img src="/assets/images/dimos/dimos-ipad-horizontal.webp" alt=""> -->
+          <img src="/assets/images/dimos/system-architecture.webp" alt="DiMOS - System Architecture" />
+
+
+        </div>
+
+        <p>
+          On the backend, Node.js and Express.js were chosen to develop a
+          scalable and efficient web application. Role-based access control was
+          implemented to manage user roles, granting specific permissions based
+          on the tasks they needed to perform. The integration of Socket.io
+          facilitated real-time communication, enabling order status updates for
+          both customers and kitchen staff.
+        </p>
+
+        <p>
+          The project relied on MongoDB Atlas, a cloud-based database, to store
+          data efficiently. Passwords were encrypted using Bcrypt.js to enhance
+          data security.
+        </p>
+
+        <h3>Results</h3>
+        <p>
+          The Kitchen Display System and Digital Menu successfully met its
+          objectives. Customers can now browse the digital menu, select their
+          desired meals, and place orders with ease. The menu management feature
+          allows kitchen staff to efficiently add, edit, or delete dishes.
+          Real-time updates on order status have significantly improved the
+          order management process. Additionally, the data insights dashboard
+          provides valuable information on popular items, sales trends, and
+          customer preferences.
+        </p>
+        <p>
+          User feedback during the first release was instrumental in making
+          several improvements to the application. Merging the menu and cart
+          pages, resolving issues with order details links, and enhancing button
+          sizes in the kitchen staff's view improved usability.
+        </p>
+
+        <h3>Conclusion</h3>
+        <p>
+          The Kitchen Display System and Digital Menu have revolutionized the
+          order management process for small restaurants. By providing an
+          affordable and efficient alternative to traditional systems, the
+          project empowers restaurant owners to digitalize their businesses and
+          increase accuracy, speed, and customer satisfaction. The seamless
+          integration of user-friendly interfaces, real-time updates, and data
+          insights make this system an invaluable asset for small restaurant
+          businesses looking to enhance their operations. With continued
+          improvements and scalability considerations, the project holds the
+          potential to transform the restaurant industry and modernize the
+          dining experience.
+        </p>
+      </section>
+    </div>
+
+    <script src="/assets/js/hambuger.js"></script>
+    <script src="/assets/js/fade.js"></script>
+  </body>
+</html>

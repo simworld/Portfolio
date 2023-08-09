@@ -1,11 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Case Studies</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Case Studies </title>
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="../index.html" aria-label="Home">
+          <img
+            src="/assets/images/logo.webp"
+            alt="Logo with no Image"
+            class="logo"
+          >
+        </a>
+
+        <button
+          class="menutoggle"
+          onclick="toggleMenu();"
+          tabindex="0"
+          aria-label="Toggle Menu"
+        >
+          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-x"></i>
+        </button>
+        <ul class="hambuger-navigation">
+          <li tabindex="0">
+            <a href="../index.html" aria-label="Home">Home</a>
+          </li>
+          <li tabindex="0">
+            <a href="about.html" aria-label="About">About</a>
+          </li>
+          <li tabindex="0">
+            <a href="case-studies.html" aria-label="Case Studies"
+              >Case Studies</a
+            >
+          </li>
+          <li tabindex="0">
+            <a href="contact.html" aria-label="Contact">Contact</a>
+          </li>
+          <li tabindex="0">
+            <a href="#" aria-label="Blog">Blog</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+      
+    <div class="main-content case-studies">
+      <div class="navigation">
+        <ul>
+          <li class="nav-item one case-studies">
+            <a href="/html/dimos.html">DiMOS</a>
+            <p class="subtitle">A Digital Menu Ordering System</p> 
+          </li>
+          <li class="nav-item two case-studies">
+            <a href="/html/case-two.html">The Butterfly</a>
+            <p class="subtitle">A modern website for a Childcare business</p> 
+          </li>
+          <!-- <li class="nav-item three">
+            Simone
+          </li> -->
+        </ul>
+      </div>
+    </div>
+
+    <!-- <script src="/assets/js/fade.js"></script> -->
+    <script src="/assets/js/hambuger.js"></script>
+  </body>
 </html>
