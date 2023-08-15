@@ -1,18 +1,20 @@
 ;(function(){
 
 
-  const one = document.querySelector(".one")
-  const fadeIns = document.querySelectorAll('.image');
+  // const one = document.querySelector(".one")
+
+  const imageFadeIn = document.querySelectorAll('.image');
+  const sectionFadeIn = document.querySelectorAll('.three')
 
   const options = {
     root: null,
     rootMargin: "0px",
-    threshold: 0.2,
+    threshold: 0.1,
   };
 
-  function animationOnLoad(){
-    one.classList.add("animation");
-  }
+  // function animationOnLoad(){
+  //   one.classList.add("animation");
+  // }
 
   
   function handleIntersection(entries, observer) {
@@ -25,17 +27,18 @@
   }
 
   // Function to initialize the Intersection Observer
-  function observeFadeIns() {
+  function observeFadeIns(item) {
     const observer = new IntersectionObserver(handleIntersection, options);
-    fadeIns.forEach((fadeIn) => {
+    item.forEach((fadeIn) => {
       observer.observe(fadeIn);
     });
   }
 
   // Wait for the page to fully load before adding initial animations
-  window.onload = animationOnLoad();
+  // window.onload = animationOnLoad();
 
   // Observe elements with the class "fade-in" for the scrolling animation
-  observeFadeIns();
+  observeFadeIns(imageFadeIn);
+  observeFadeIns(sectionFadeIn);
 
 })();
