@@ -126,7 +126,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         break;
                     case 1:
                         newLink.textContent = "Works";
-                        newLink.href = "/html/case-studies.html";
+                        newLink.href = "/html/works.html";
                         break;
                     case 2:
                         newLink.textContent = "Contact";

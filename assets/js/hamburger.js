@@ -4,7 +4,7 @@ window.addEventListener('scroll',function(){
 });
 
 function toggleMenu() {
-    const menu = document.querySelector('.hambuger-navigation');
+    const menu = document.querySelector('.hamburger-navigation');
     const menutoggle = document.querySelector('.menutoggle');
     menutoggle.classList.toggle('open');
     menu.classList.toggle('open');

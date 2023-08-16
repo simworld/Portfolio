@@ -34,20 +34,20 @@
           <i class="fa-solid fa-bars"></i>
           <i class="fa-solid fa-x"></i>
         </button>
-        <ul class="hambuger-navigation">
+        <ul class="hamburger-navigation">
           <li tabindex="0">
             <a href="../index.html" aria-label="Home">Home</a>
           </li>
           <li tabindex="0">
-            <a href="about.html" aria-label="About">About</a>
+            <a href="/html/about.html" aria-label="About">About</a>
           </li>
           <li tabindex="0">
-            <a href="case-studies.html" aria-label="Case Studies"
-              >Case Studies</a
+            <a href="/html/works.html" aria-label="Works"
+              >Works</a
             >
           </li>
           <li tabindex="0">
-            <a href="contact.html" aria-label="Contact">Contact</a>
+            <a href="/html/contact.html" aria-label="Contact">Contact</a>
           </li>
           <li tabindex="0">
             <a href="#" aria-label="Blog">Blog</a>
@@ -57,7 +57,7 @@
     </header>
 
     <div class="main-content contact">
-      <section class="one">
+      <section class="one contact">
         <h1>Find me on:</h1>
         <div class="socials">
             <a
@@ -98,10 +98,11 @@
           </div>
         <!-- <p>with a passion for creating beautiful and interactive websites.</p> -->
       </section>
-<!-- 
-      <section class="two">
-        <img src="/assets/images/stencil-orange.png" alt="Me" />
+
+      <!-- <section class="two about image">
+        <img src="/assets/images/about/stencil.webp" alt="Me"/>
       </section> -->
+
 
       <section class="three">
         <h2>Send me a message!</h2>
@@ -122,10 +123,12 @@
 
               <label for="email">Email</label>
               <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Your email.."
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your email.."
+              pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+              required
               >
 
               <label for="phone">Phone</label>
@@ -158,6 +161,8 @@
     </div>
 
     <script src="/assets/js/fade.js"></script>
-    <script src="/assets/js/hambuger.js"></script>
+    <script src="/assets/js/hamburger.js"></script>
+    <script src="/assets/js/current-page.js"></script>
+
   </body>
 </html>
