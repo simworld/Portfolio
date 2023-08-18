@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DiMOS - Case Study One</title>
+    <title>DiMOS</title>
     <link rel="stylesheet" href="/assets/css/styles.css" />
     <link
       rel="stylesheet"
@@ -19,10 +19,9 @@
               src="/assets/images/logo.webp"
               alt="Logo with no Image"
               class="logo"
-            >
+            />
           </a>
         </div>
-
 
         <button
           class="menutoggle"
@@ -41,9 +40,7 @@
             <a href="/html/about.html" aria-label="About">About</a>
           </li>
           <li tabindex="0">
-            <a href="/html/works.html" aria-label="Works"
-              >Works</a
-            >
+            <a href="/html/works.html" aria-label="Works">Works</a>
           </li>
           <li tabindex="0">
             <a href="/html/contact.html" aria-label="Contact">Contact</a>
@@ -53,17 +50,22 @@
           </li>
         </ul>
       </nav>
+      <div class="progress-bar"></div>
+
     </header>
 
-    <div class="main-content dimos">
-      <section class="one dimos">
+    <div class="main-content works-content">
+      <section class="one works-content">
         <h1>DiMOS</h1>
         <p>A Digital Menu Ordering System</p>
         <!-- <img src="/assets/images/dimos/dimos-iphone.png" alt="DiMOS" /> -->
       </section>
 
-      <section class="two dimos image">
-        <img src="/assets/images/dimos/dimos-overview-devices-no-logo.webp" alt="DiMOS" />
+      <section class="two works-content image">
+        <img
+          src="/assets/images/dimos/dimos-overview-devices-logo.webp"
+          alt="DiMOS"
+        />
       </section>
 
       <section class="three">
@@ -80,7 +82,7 @@
 
         <div class="section-image image">
           <img
-            src="/assets/images/dimos/iPadMini-dimos.webp"
+            src="/assets/images/dimos/ipadmini-dimos.webp"
             alt="DiMOS on iPad Mini "
           />
         </div>
@@ -133,16 +135,19 @@
 
         <div class="section-image image">
           <img
-            src="/assets/images/dimos/MVC.webp"
+            src="/assets/images/dimos/mvc.webp"
             alt="DiMOS - Model-View-Controller"
           />
+          <div class="overlay">
+            <div class="text">Model View Controller Approach</div>
+          </div>
         </div>
 
         <p>
           The system's frontend was built using HTML, CSS, and JavaScript, with
           EJS as the templating engine for dynamic content. On the backend,
           Node.js and Express.js were chosen to develop a scalable and efficient
-          web application. 
+          web application.
         </p>
 
         <div class="section-image image">
@@ -150,26 +155,29 @@
             src="/assets/images/dimos/system-architecture.webp"
             alt="DiMOS - System Architecture"
           />
+          <div class="overlay">
+            <div class="text">System Architecture</div>
+          </div>
         </div>
 
         <p>
-          Role-based access control was implemented to manage
-          user roles, granting specific permissions based on the tasks they
-          needed to perform. The integration of Socket.io facilitated real-time
+          Role-based access control was implemented to manage user roles,
+          granting specific permissions based on the tasks they needed to
+          perform. The integration of Socket.io facilitated real-time
           communication, enabling order status updates for both customers and
-          kitchen staff.
-          The project relied on MongoDB Atlas, a cloud-based database, to store
-          data efficiently. Passwords were encrypted using Bcrypt.js to enhance
-          data security.
+          kitchen staff. The project relied on MongoDB Atlas, a cloud-based
+          database, to store data efficiently. Passwords were encrypted using
+          Bcrypt.js to enhance data security.
         </p>
 
         <h3>Results</h3>
         <p>
-          The Kitchen Display System and Digital Menu successfully met its
-          objectives. Customers can now browse the digital menu, select their
-          desired meals, and place orders with ease. The menu management feature
-          allows kitchen staff to efficiently add, edit, or delete dishes.
-          Real-time updates on order status can make a significant improvement in the
+          DiMOS successfully met its objectives. Customers can now browse the
+          digital menu, select their desired meals, and place orders with ease.
+          The kitchen staff can track orders and change orders' status using the
+          Kitchen Display System view. The menu management feature allows
+          kitchen staff to efficiently add, edit, or delete dishes. Real-time
+          updates on order status can make a significant improvement in the
           order management process. Additionally, the data insights dashboard
           provides valuable information on popular items, sales trends, and
           customer preferences.
@@ -204,7 +212,6 @@
           dining experience.
         </p>
 
-
         <div class="section-image image">
           <img
             src="/assets/images/dimos/dimos-overview-devices.webp"
@@ -212,14 +219,18 @@
           />
         </div>
 
-        <p style="font-weight: bolder;">Demo availalbe at: <a href="http://dimos.azurewebsites.net" target="_blank">DiMOS on Azure</a></p>
-
+        <p style="font-weight: bolder">
+          Demo availalbe at:
+          <a href="http://dimos.azurewebsites.net" target="_blank"
+            >DiMOS on Azure</a
+          >
+        </p>
       </section>
     </div>
 
     <script src="/assets/js/hamburger.js"></script>
     <script src="/assets/js/fade.js"></script>
     <script src="/assets/js/current-page.js"></script>
-
+    <script src="/assets/js/progress-bar.js"></script>
   </body>
 </html>
