@@ -136,18 +136,6 @@ ul {
   /* border-radius: 5px; */
 }
 
-/* Jumping animation using keyframes */
-@keyframes jumpAnimation {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(
-      -10px
-    ); /* Adjust this value to control the jump height */
-  }
-}
 
 /* .logo:hover {
   transform: scale(1.2); 
@@ -312,16 +300,6 @@ button.menutoggle {
   animation: fadeIn 0.3s ease-in-out;
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    visibility: hidden;
-  }
-  100% {
-    opacity: 1;
-    visibility: visible;
-  }
-}
 
 .hamburger-navigation.open li {
   margin: 10px;
@@ -339,9 +317,17 @@ button.menutoggle {
 }
 
 .one {
-  opacity: 1;
+  /* opacity: 1; */
   animation: slideInFromRight 0.5s ease-in-out;
 }
+
+/* .one h1 {
+  animation: slideInFromRight 0.5s ease-in-out;
+}
+
+.one p {
+  animation: slideInFromLeft 0.5s ease-in-out;
+} */
 
 .two {
   opacity: 1;
@@ -349,23 +335,6 @@ button.menutoggle {
 
 }
 
-@keyframes slideInFromLeft {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-@keyframes slideInFromRight {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
 
 .image {
   opacity: 0;
@@ -384,15 +353,6 @@ button.menutoggle {
 
 .logo{
   animation: slideInFromBottomAndFade 1s ease-in-out forwards;
-}
-
-@keyframes slideInFromBottom {
-  0% {
-    transform: translateY(100%);
-  }
-  100% {
-    transform: translateY(0);
-  }
 }
 
 
@@ -589,6 +549,7 @@ display: flex;
   object-fit: cover;
   position: relative;
   right: 50px;
+  /* box-shadow: 10px 10px 5px 5px black; */
 }
 
 .section-image {
@@ -752,6 +713,7 @@ section.two.contact h2, section.two.contact p {
   display: flex;
   align-self: center;
   color: var(--snow);
+  padding: 0;
 }
 
 /* section.two.contact img {
@@ -788,20 +750,10 @@ header .content h2 {
 } */
 
 /* section.two.about {
-
 	padding: 100vw;
 } */
 
-@keyframes slideInFromBottomAndFade {
-  0% {
-    transform: translateY(100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
+
 
 .form {
     display: flex;
@@ -857,6 +809,76 @@ textarea {
 
 .submit-btn:hover i {
   color: var(--snow);
+}
+
+/* KEYFRAMES */
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/* Jumping animation using keyframes */
+@keyframes jumpAnimation {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(
+      -10px
+    ); /* Adjust this value to control the jump height */
+  }
+}
+
+@keyframes slideInFromBottomAndFade {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 @media screen and (min-width: 1024px) {
