@@ -316,26 +316,31 @@ button.menutoggle {
   text-decoration: none;
 }
 
-.one {
+.nav-item.one.works {
   /* opacity: 1; */
   animation: slideInFromRight 0.5s ease-in-out;
 }
 
-/* .one h1 {
+.nav-item.two.works {
+  /* opacity: 1; */
+  animation: slideInFromLeft 0.5s ease-in-out;
+
+}
+
+section.one.about h1, 
+section.one.works-content h1 {
   animation: slideInFromRight 0.5s ease-in-out;
 }
 
-.one p {
+section.one.about p, 
+section.one.works-content p {
   animation: slideInFromLeft 0.5s ease-in-out;
-} */
-
-.two {
-  opacity: 1;
-  animation: slideInFromLeft 0.5s ease-in-out;
-
 }
 
+section.one.contact {
+  animation: fadeIn 1s ease-in-out;
 
+}
 .image {
   opacity: 0;
   transition: opacity 1s ease-in;
@@ -345,9 +350,8 @@ button.menutoggle {
   opacity: 1;
 }
 
-/* New class for the bottom animation effect */
 .nav-item.animation {
-  opacity: 1;
+  /* opacity: 1; */
   animation: slideInFromBottom 0.5s ease-in-out;
 }
 
@@ -694,6 +698,9 @@ section.one.contact {
   animation-delay: 1.5s;
 }
 
+section.two.contact h2, section.two.contact p {
+  z-index: 0;
+}
 
 section.two.contact {
 	background-image: url('/assets/images/background.webp');
@@ -707,7 +714,36 @@ section.two.contact {
   justify-content: center;
   flex-direction: column;
   /* padding: 1000px; */
+  position: relative; /* Add this to allow positioning of the pseudo-element */
 }
+
+section.two.contact::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  /* opacity: 0.7; */
+  pointer-events: none; /* Allow interactions with the base image */
+  z-index: 1; /* Place the overlay image above the background image */
+
+  background-image: url('/assets/images/mountain.webp');
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+  min-height: 80vh;
+  width: 100vw;
+  /* height: 1250px; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* padding: 1000px; */
+}
+
+
+
 
 section.two.contact h2, section.two.contact p {
   display: flex;
