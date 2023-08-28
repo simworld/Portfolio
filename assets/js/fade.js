@@ -5,6 +5,8 @@
 
   const imageFadeIn = document.querySelectorAll('.image');
   const sectionFadeIn = document.querySelectorAll('.three')
+  const sectionTwoFadeIn = document.querySelectorAll('.two')
+
 
   const options = {
     root: null,
@@ -40,5 +42,7 @@
   // Observe elements with the class "fade-in" for the scrolling animation
   observeFadeIns(imageFadeIn);
   observeFadeIns(sectionFadeIn);
+  observeFadeIns(sectionTwoFadeIn);
+
 
 })();
