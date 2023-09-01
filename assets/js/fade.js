@@ -6,12 +6,11 @@
   const imageFadeIn = document.querySelectorAll('.image');
   const sectionFadeIn = document.querySelectorAll('.three')
   const sectionTwoFadeIn = document.querySelectorAll('.two')
-
-
+  
   const options = {
     root: null,
     rootMargin: "0px",
-    threshold: 0.1,
+    threshold: 0.05,
   };
 
   // function animationOnLoad(){

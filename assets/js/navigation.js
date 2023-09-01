@@ -84,9 +84,15 @@
 //     });
 // });
 document.addEventListener("DOMContentLoaded", function() {
-    const tapHereButton = document.querySelector(".show-menu");
+    // const tapHereButton = document.querySelector(".show-menu");
+    // const anotherTapButton = document.querySelector(".nav-item.one.home")
+    const tapHereButton = document.querySelector("body");
+
     const mainContent = document.querySelector(".main-content");
     const navItems = document.querySelectorAll(".nav-item");
+    const showMenu = document.querySelector(".show-menu")
+
+    
 
     // Create arrays to store the original text content of the <a> elements
     const originalTextContent = [];
@@ -101,7 +107,7 @@ document.addEventListener("DOMContentLoaded", function() {
         item.classList.add("animation-initial");
     });
 
-    tapHereButton.addEventListener("click", function() {
+    function toggleContent() {
         mainContent.classList.toggle("hidden"); // Toggle the "hidden" class to hide/show the text
 
         // Toggle the animation class based on the toggle state
@@ -147,9 +153,17 @@ document.addEventListener("DOMContentLoaded", function() {
             });
         }
 
+        // randomBackground()
+
         // Toggle the isToggled flag
         isToggled = !isToggled;
-    });
+        tapHereButton.removeEventListener("click", toggleContent);
+        showMenu.style.display = "none"
+
+    }
+
+    tapHereButton.addEventListener("click", toggleContent)
+    // anotherTapButton.addEventListener("click", toggleContent)
 });
 
 

@@ -15,7 +15,7 @@
     <div class="main-content">
       <div class="navigation">
         <ul>
-          <li class="nav-item one home">
+          <li class="nav-item one home" onmouseover="changeColor(this)" onmouseout="restoreColor(this)">
             Hello<span class="comma">,</span>
           </li>
           <li class="nav-item two home">
@@ -31,9 +31,12 @@
     </div>
 
     <div class="show-menu">
-      <button class="tap-here">Tap Here</button>
+      <button class="tap-here">Tap Anywhere</button>
     </div>
 
     <script src="/assets/js/navigation.js"></script>
+    <script src="/assets/js/random.js"></script>
+    <script src="/assets/js/change-color.js"></script>
+
   </body>
 </html>

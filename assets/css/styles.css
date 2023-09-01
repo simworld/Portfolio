@@ -15,15 +15,17 @@ h1 {
 
 h2 {
   font-size: clamp(24px, 3vw, 36px);
+  /*   font-size: clamp(24px, 4vw, 40px) */
 }
 h3 {
   font-size: clamp(22px, 3vw, 24px);
+  /* font-size: clamp(22px, 4vw, 26px); */
+
 }
 p,
 ul {
   font-size: clamp(18px, 1vw, 20px);
     /* font-family: FuturaPTExtraBold-Reg, sans-serif; */
-  
 }
 
 body {
@@ -110,6 +112,7 @@ nav {
 }
 
 /* HOME */
+
 #home {
     background-image: url('/assets/images/background.webp');
     background-size: cover;
@@ -120,7 +123,36 @@ nav {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    /* animation-name: zoomFade;
+    animation-duration: 1.2s;
+    animation-timing-function: cubic-bezier(0.5, 0.6, 0.6, 1);
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running; */
+
 }
+
+
+
+/* #home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('/assets/images/background.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transform: scale(1.2); //remove 
+  z-index: -1;
+  animation: zoomFade 1.2s cubic-bezier(0.5, 0.6, 0.6, 1) 0s 1 normal none running;
+} */
 
 ul {
   list-style-type: none;
@@ -147,8 +179,10 @@ ul {
   font-size: 4rem;
   font-weight: bold;
   line-height: 7rem;
+  
   /* opacity: 0;
     transition: opacity 0.3s ease-in-out; */
+    
 }
 
 .nav-item.animation-initial {
@@ -160,23 +194,57 @@ ul {
   font-size: inherit;
   font-weight: inherit;
   line-height: inherit;
+  /* background-image: linear-gradient(to right, var(--orange) 0%, var(--orange) 100%);
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  transition: background-size 0.3s ease; */
+  
 }
 
 .nav-item a:hover {
   /* font-size: 4.1rem; */
   color: var(--orange);
   padding-left: 10px;
-  transition: padding-left 0.1s ease-in;
+  /* transition: padding-left 0.1s ease-in; */
+  
 }
 /* 
 .comma {
   color: var(--cornflower-blue);
 } */
 
-.nav-item.one {
+
+.nav-item.one.home.animation-initial {
   color: var(--orange);
+  cursor: pointer;
 }
 
+.nav-item.one.home.animation a:hover {
+  color: var(--snow);
+}
+
+.nav-item.two,
+.nav-item.three {
+  transition: color 0.3s ease;
+  cursor: pointer;
+  animation: zoomFade 1.2s cubic-bezier(0.5, 0.6, 0.6, 1);
+
+}
+
+/* .nav-item.home a,  */
+p a{
+  background-image: linear-gradient(to left, var(--orange) 0%, var(--orange) 100%);
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  transition: background-size 0.3s ease;
+}
+
+/* .nav-item.home a:hover,  */
+p a:hover {
+  background-size: 100% 100%;
+  color: var(--snow); /* Apply the text color change on hover */
+  padding: 0 5px;
+}
 /* NAVIGATION MENU*/
 
 header {
@@ -198,6 +266,7 @@ header {
 .sticky {
   background: var(--snow);
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  padding: 5px;
 }
 
 /* nav li {
@@ -268,7 +337,8 @@ button.menutoggle {
   justify-content: space-between; */
   cursor: pointer;
   padding: 20px;
-  animation: fadeIn 3s ease-in-out;
+  /* animation: fadeIn 3s ease-in-out; */
+  animation: slideInFromRight 1.2s cubic-bezier(0.5, 0.6, 0.6, 1);
 
   
 }
@@ -339,7 +409,7 @@ button.menutoggle {
 
 section.one.about h1, 
 section.one.works-content h1 {
-  animation: slideInFromRight 0.5s ease-in-out;
+  animation: slideInFromBottom 0.5s ease-in-out;
 }
 
 section.one.about p, 
@@ -361,11 +431,14 @@ section.one.contact {
 
 .nav-item.animation {
   /* opacity: 1; */
-  animation: slideInFromBottom 0.5s ease-in-out;
+  animation: slideInFromBottom 0.5s ease-in;
 }
 
 .logo{
-  animation: slideInFromBottomAndFade 1s ease-in-out forwards;
+  /* animation: slideInFromBottomAndFade 1s ease-in-out forwards; */
+  /* animation: zoomFade 1.2s cubic-bezier(0.5, 0.6, 0.6, 1); */
+  animation: slideInFromLeft 1.2s cubic-bezier(0.5, 0.6, 0.6, 1);
+
 }
 
 .menutoggle:hover i.fa-bars,
@@ -380,17 +453,7 @@ section.one.contact {
   animation: rotateIcon 0.3s ease-in-out forwards;
 } */
 
-@keyframes rotateIcon {
-  0% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(90deg);
-  }
-  100% {
-    transform: rotate(180deg);
-  }
-}
+
 
 /* .nav-item.two a {
     font-size: 50px;
@@ -503,11 +566,6 @@ section.one.error h1 {
   /* font-size: 90px; */
 }
 
-@keyframes textclip {
-  to {
-    background-position: 200% center;
-  }
-}
 
 /* WORKS & BLOG*/
 .nav-item.works {
@@ -977,8 +1035,6 @@ header .content h2 {
 	padding: 100vw;
 } */
 
-
-
 .form {
     display: flex;
     flex-direction: column;
@@ -1038,14 +1094,42 @@ textarea {
 
 /* KEYFRAMES */
 
+@keyframes zoomFade {
+  0% {
+    /* Initial styles */
+    opacity: 0;
+    transform: scale(1.2);
+  }
+  100% {
+    /* Final styles */
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes rotateIcon {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
 @keyframes slideInFromBottom {
   0% {
-    transform: translateY(100%);
+    transform: translateY(50px); 
+    opacity: 0;
   }
   100% {
     transform: translateY(0);
+    opacity: 1;
   }
 }
+
 
 @keyframes slideInFromLeft {
   0% {
@@ -1106,17 +1190,41 @@ textarea {
   }
 }
 
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* media query for mobile in landscape mode */
+@media only screen and (max-width: 812px) and (orientation: landscape) {
+.nav-item {
+  font-size: 3rem;
+  line-height: 5rem;
+}
+}
+
 @media screen and (min-width: 1024px) {
   /* section.three {
     padding: 0 30px;
   } */
   
-  .nav-item.home{
-    font-size: 8rem;
-    /* line-height: 9.2rem; */
-    line-height: 10rem;
-
+  .nav-item.one {
+    color: var(--orange);
   }
+  .nav-item.home a{
+  background-image: linear-gradient(to left, var(--orange) 0%, var(--orange) 100%);
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  transition: background-size 0.3s ease;
+}
+
+.nav-item.home a:hover {
+  background-size: 100% 100%;
+  color: var(--snow); /* Apply the text color change on hover */
+  padding: 0 5px;
+}
+
   .form {
     max-width: 80%; 
   }
@@ -1139,7 +1247,26 @@ textarea {
 }
 
 @media screen and (min-width: 1280px) {
-  
+
+  .nav-item.home{
+    font-size: 8rem;
+    /* line-height: 9.2rem; */
+    line-height: 10rem;
+  }
+
+  section.one.works-content h1 {
+    font-size: 6rem;
+  } 
+
+  section.one.works-content p {
+    font-size: 2rem;
+  }
+
+  /* section.two.contact h2 {
+    font-size: 3rem;
+
+  }
+   */
   section.three{
     width: 60vw
   }

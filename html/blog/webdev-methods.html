@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebDev Methods</title>
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/assets/images/favicon/site.webmanifest" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo-container">
+          <a href="../../index.html" aria-label="Home">
+            <img
+              src="/assets/images/logo.webp"
+              alt="Logo"
+              class="logo"
+            />
+          </a>
+        </div>
+
+        <button
+          class="menutoggle"
+          onclick="toggleMenu();"
+          tabindex="0"
+          aria-label="Toggle Menu"
+        >
+          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-x"></i>
+        </button>
+        <ul class="hamburger-navigation">
+          <li tabindex="0">
+            <a href="../../index.html" aria-label="Home">Home</a>
+          </li>
+          <li tabindex="0">
+            <a href="/html/about.html" aria-label="About">About</a>
+          </li>
+          <li tabindex="0">
+            <a href="/html/works.html" aria-label="Works">Works</a>
+          </li>
+          <li tabindex="0">
+            <a href="/html/contact.html" aria-label="Contact">Contact</a>
+          </li>
+          <li tabindex="0">
+            <a href="/html/blog.html" aria-label="Blog">Blog</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="progress-bar"></div>
+    </header>
+
+    <div class="main-content works-content">
+      <section class="one works-content">
+        <h1>CMS, Hand Coding, and JS Frameworks:</h1>
+        <p>Which One is Right for You?</p>
+      </section>
+
+      <section class="two works-content image">
+        <img
+          src="/assets/images/dimos/dimos-overview-devices-logo.webp"
+          alt="DiMOS"
+        />
+      </section>
+
+      <section class="three">
+        <h2>The importance of the online presence</h2>
+        <p>
+          Nowadays it is essential for a company or a professional to have a
+          website. In this digital world if a company does not have a strong
+          online presence, they can miss a lot of opportunities (Your Virtual
+          People, 2021). A website not only can improve the visibility for the
+          company, but it can increase the revenue offering new ways of
+          monetisation (for example online selling) and can expand the market
+          share reaching more customers all over the world (Parachute, 2023). As
+          shown by the picture below, time spent on the internet has increased
+          by 12% over the last four years (Comscore, 2023). As discussed in an
+          article by McCormick, one of the main points to try increase the
+          online presence is to get a modern and attractive website (McCormick,
+          2021).
+        </p>
+
+        <div class="section-image image">
+          <img
+            src="/assets/images/dimos/ipadmini-dimos.webp"
+            alt="DiMOS on iPad Mini "
+          />
+        </div>
+
+        <h3>The four different ways to build a Website</h3>
+        <p>
+          In the early days of the internet, creating a website required
+          technical knowledge of HTML. However, nowadays there are numerous
+          methods for building a website, and even if you are not a web
+          developer you can build your own website. There are four main ways to
+          create a website: hand coding, using a website builder, using a
+          component-based website, and using a framework. Each methods have its
+          own benefits and drawbacks.
+        </p>
+
+        <div class="section-image image">
+          <img
+            src="/assets/images/dimos/iphone14-dimos.webp"
+            alt="DiMOS on iPad Mini "
+          />
+        </div>
+
+        <h3>Hand Coding</h3>
+        <p>
+          Hand Coding is the traditional way to create a website. You create the
+          mock-ups, write the code, and develop both front end and back end. To
+          do that, you need to know some programming language and it takes more
+          time to develop a website. Some pros are that you have full control of
+          what you are doing, creating your own template, adding some features
+          and more so you can personalise your product. However it is more
+          complex specially if you are developing a big project which takes
+          several hours of debugging and testing.
+        </p>
+
+        <div class="section-image image">
+          <img
+            src="/assets/images/dimos/mvc.webp"
+            alt="DiMOS - Model-View-Controller"
+          />
+          <div class="overlay">
+            <div class="text">Model View Controller Approach</div>
+          </div>
+        </div>
+
+        <div class="section-image image">
+          <img
+            src="/assets/images/dimos/system-architecture.webp"
+            alt="DiMOS - System Architecture"
+          />
+          <div class="overlay">
+            <div class="text">System Architecture</div>
+          </div>
+        </div>
+
+        <h3>Website Builder</h3>
+        <p>
+          A website builder is a tool that allows you to build and manage a
+          website in an easy way. Unlike the hand coding approach, you do not
+          need to have professional programming skills. You can use templates
+          and themes that are already created and suit your business website. It
+          is convenient compared to hand coding, and you do need to spend time
+          on debugging and testing as the code is already written and tested.
+          You can customise your website but usually you have some restrictions.
+          Most of the available templates are similar, so when the website is
+          done you can have a product that looks like other websites. An example
+          of website builder is a Content Management System (CMS ), like Wix or
+          WordPress .
+        </p>
+
+        <div class="section-image image">
+          <img
+            src="/assets/images/dimos/iphone12-dimos.webp"
+            alt="DiMOS on iPhone 12"
+          />
+        </div>
+
+        <h3>Component-based website</h3>
+        <p>
+          The component-based approach uses pre-built components that when
+          assembled together create a website. This approach allows the
+          developers to create the website using reusable components that are
+          easier to maintain and update. This method requires some technical
+          skills and the knowledge of programming languages.
+        </p>
+
+        <h3>Frameworks</h3>
+        <p>
+          A JavaScript framework or library like React.js or VUE.js , contains
+          code with features and functions that can be integrated on the
+          website. This approach offers a balance between hand coding and
+          website builders, as the developer can speed up the development
+          process using pre-built components.
+        </p>
+
+        <h3>Conclusion</h3>
+        <p>
+          In conclusion, website builder, hand coding, component-based, and
+          JavaScript frameworks all have their own unique strengths and
+          weaknesses. While some developers prefer the ease and convenience of
+          website builder platforms, others enjoy the flexibility and control of
+          hand coding, and still, others appreciate the power and efficiency of
+          JavaScript frameworks. Ultimately, the choice between these different
+          approaches to web development depends on your individual needs and
+          preferences, as well as the specific requirements of each project. By
+          experimenting with different tools and techniques, you can find the
+          approach that works best for you and your projects. Whether you choose
+          to work with a website builder, a component-based approach, hand code
+          your sites, or use a JavaScript framework, remember to stay up to date
+          with the latest trends and technologies in web development.
+        </p>
+
+        <div class="section-image image">
+          <img
+            src="/assets/images/dimos/dimos-overview-devices.webp"
+            alt="DiMOS Devices"
+          />
+        </div>
+
+      </section>
+    </div>
+
+    <script src="/assets/js/hamburger.js"></script>
+    <script src="/assets/js/fade.js"></script>
+    <script src="/assets/js/current-page.js"></script>
+    <script src="/assets/js/progress-bar.js"></script>
+  </body>
+</html>
