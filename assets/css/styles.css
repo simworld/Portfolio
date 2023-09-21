@@ -196,7 +196,7 @@ ul {
 
 .nav-item a:hover {
   /* font-size: 4.1rem; */
-  color: var(--orange);
+  /* color: var(--orange); */
   padding-left: 10px;
   /* transition: padding-left 0.1s ease-in; */
 }
