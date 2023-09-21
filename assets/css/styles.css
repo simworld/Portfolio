@@ -210,9 +210,9 @@ ul {
   cursor: pointer;
 }
 
-.nav-item.one.home.animation a:hover {
+/* .nav-item.one.home.animation a:hover {
   color: var(--snow);
-}
+} */
 
 .nav-item.two,
 .nav-item.three {
@@ -404,6 +404,10 @@ section.one.about p,
 section.one.works-content p,
 section.one.blog-content p {
   animation: slideInFromLeft 0.5s ease-in-out;
+}
+
+.article-2 h2 {
+  text-align: center;
 }
 
 section.one.contact {
@@ -1239,6 +1243,7 @@ textarea {
 
   .socials i {
     font-size: 6em;
+    transition: font-size 0.4s ease-in;
   }
 }
 
