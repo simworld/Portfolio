@@ -384,24 +384,24 @@ button.menutoggle {
   text-decoration: none;
 }
 
-.nav-item.one.works {
+.nav-item.one.projects {
   /* opacity: 1; */
   animation: slideInFromRight 0.5s ease-in-out;
 }
 
-.nav-item.two.works {
+.nav-item.two.projects {
   /* opacity: 1; */
   animation: slideInFromLeft 0.5s ease-in-out;
 }
 
 section.one.about h1,
-section.one.works-content h1,
+section.one.projects-content h1,
 section.one.blog-content h1 {
   animation: slideInFromBottom 0.5s ease-in-out;
 }
 
 section.one.about p,
-section.one.works-content p,
+section.one.projects-content p,
 section.one.blog-content p {
   animation: slideInFromLeft 0.5s ease-in-out;
 }
@@ -554,8 +554,8 @@ section.one.error h1 {
   /* font-size: 90px; */
 }
 
-/* WORKS & BLOG*/
-.nav-item.works {
+/* projects & BLOG*/
+.nav-item.projects {
   line-height: 1;
 }
 
@@ -564,8 +564,8 @@ section.one.error h1 {
 }
 
 /*********************************** To use for blog items space  */
-li.nav-item.one.works,
-li.nav-item.two.works {
+li.nav-item.one.projects,
+li.nav-item.two.projects {
   padding-bottom: 30px;
   padding-top: 30px;
 }
@@ -580,7 +580,7 @@ li.nav-item.two.works {
   /* margin-top: 130px; */
 }
 
-.main-content.works {
+.main-content.projects {
   margin-top: 180px;
 }
 .main-content.blog {
@@ -600,13 +600,13 @@ li.nav-item.two.works {
   padding: 30px;
 }
 
-.main-content.works a,
+.main-content.projects a,
 .main-content.blog a {
   color: var(--platinum);
 }
 
-.main-content.works a:hover,
-.main-content.works a:focus,
+.main-content.projects a:hover,
+.main-content.projects a:focus,
 .main-content.blog a:hover,
 .main-content.blog a:focus {
   color: var(--orange);
@@ -639,7 +639,7 @@ li.nav-item.two.works {
 /* ABOUT */
 
 .main-content.about,
-.main-content.works-content,
+.main-content.projects-content,
 .main-content.blog-content {
   display: flex;
   flex-direction: column;
@@ -670,14 +670,14 @@ section.two.about img {
 
 /* DIMOS & BUTTERFLY */
 
-section.two.works-content {
+section.two.projects-content {
   /* width: 100vw;
 height: 96vh;
 overflow: hidden; */
   display: flex;
 }
 
-.two.works-content img {
+.two.projects-content img {
   width: 100vw;
   /* height: 60vh; */
   height: 80vh;
@@ -1195,7 +1195,15 @@ textarea {
 }
 
 /* media query for mobile in landscape mode */
-@media only screen and (max-width: 812px) and (orientation: landscape) {
+/* @media only screen and (max-width: 812px) and (orientation: landscape) {
+  .nav-item {
+    font-size: 3rem;
+    line-height: 5rem;
+  }
+} */
+
+/* media query for mobile in landscape mode */
+@media only screen and (max-height: 420px) and (orientation: landscape) {
   .nav-item {
     font-size: 3rem;
     line-height: 5rem;
@@ -1254,11 +1262,11 @@ textarea {
     line-height: 10rem;
   }
 
-  section.one.works-content h1 {
+  section.one.projects-content h1 {
     font-size: 6rem;
   }
 
-  section.one.works-content p {
+  section.one.projects-content p {
     font-size: 2rem;
   }
 
