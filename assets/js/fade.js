@@ -1,12 +1,9 @@
-;(function(){
-
-
+(function () {
   // const one = document.querySelector(".one")
+  const imageFadeIn = document.querySelectorAll(".image");
+  const sectionFadeIn = document.querySelectorAll(".three");
+  const sectionTwoFadeIn = document.querySelectorAll(".two");
 
-  const imageFadeIn = document.querySelectorAll('.image');
-  const sectionFadeIn = document.querySelectorAll('.three')
-  const sectionTwoFadeIn = document.querySelectorAll('.two')
-  
   const options = {
     root: null,
     rootMargin: "0px",
@@ -17,7 +14,6 @@
   //   one.classList.add("animation");
   // }
 
-  
   function handleIntersection(entries, observer) {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
@@ -42,6 +38,4 @@
   observeFadeIns(imageFadeIn);
   observeFadeIns(sectionFadeIn);
   observeFadeIns(sectionTwoFadeIn);
-
-
 })();

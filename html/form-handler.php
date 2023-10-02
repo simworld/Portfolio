@@ -35,8 +35,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     // Send the email
     if (mail($to, $subject, $messageBody, $headers)) {
         // Email sent successfully 
-        echo "<script>alert('Message sent! Thank you for contacting us. We will get back to you soon.');window.location.href = 'thank-you.html';</script>";
-        // header("Location: index.html"); 
+        // echo "<script>alert('Message sent! Thank you for contacting us. We will get back to you soon.');window.location.href = 'thank-you.html';</script>";
+        header("Location: thank-you.html"); 
         exit;
     } else {
         // Handle email sending errors (e.g., display an error message to the user)

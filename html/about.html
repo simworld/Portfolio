@@ -37,7 +37,13 @@
       <nav>
         <div class="logo-container">
           <a href="../index.html" aria-label="Home">
-            <img src="/assets/images/logo.webp" alt="Logo" class="logo" />
+            <img
+              src="/assets/images/logo.webp"
+              alt="Logo"
+              class="logo"
+              width="2048"
+              height="1536"
+            />
           </a>
         </div>
 
@@ -48,9 +54,11 @@
           aria-label="Toggle Menu"
         >
           <i class="fa-solid fa-bars"></i>
-          <i class="fa-solid fa-x"></i>
+          <!-- <i class="fa-solid fa-x"></i> -->
         </button>
         <ul class="hamburger-navigation">
+          <!-- <div id="hamburger"></div> -->
+          <!-- <li><i class="fa-solid fa-x"></i></li> -->
           <li tabindex="0">
             <a href="../index.html" aria-label="Home">Home</a>
           </li>
@@ -66,6 +74,9 @@
           <li tabindex="0">
             <a href="/html/blog.html" aria-label="Blog">Blog</a>
           </li>
+          <li class="copyright">
+            &copy; 2023 Simone Susino. All right reserved.
+          </li>
         </ul>
       </nav>
       <div class="progress-bar"></div>
@@ -77,9 +88,21 @@
         <p>with a passion for creating beautiful and interactive websites.</p>
       </section>
 
-      <section class="two about image">
-        <img src="/assets/images/about/stencil.webp" alt="Me" />
-      </section>
+      <div class="bouncing">
+        <button class="scroll-down" aria-label="Scroll Down">
+          Scroll down
+        </button>
+        <!-- <i class="fa-solid fa-angles-down"></i> -->
+      </div>
+
+      <div class="two about image">
+        <img
+          src="/assets/images/about/stencil.webp"
+          alt="Me"
+          width="435"
+          height="393"
+        />
+      </div>
 
       <section class="three">
         <h2>About Me</h2>
@@ -125,7 +148,9 @@
         </p>
 
         <p>
-          <a href="/my-resume.pdf" target="_blank">My Resume (pdf 116kb)</a>
+          <a href="/my-resume.pdf" target="_blank"
+            >My Resume (pdf 116kb) <i class="fa-solid fa-download"></i>
+          </a>
         </p>
       </section>
     </div>
