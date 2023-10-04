@@ -1,7 +1,5 @@
 "use strict";
 document.addEventListener("DOMContentLoaded", function () {
-  // const tapHereButton = document.querySelector(".show-menu");
-  // const anotherTapButton = document.querySelector(".nav-item.one.home")
   const tapHereButton = document.querySelector("body");
   const mainContent = document.querySelector(".main-content");
   const navItems = document.querySelectorAll(".nav-item");
