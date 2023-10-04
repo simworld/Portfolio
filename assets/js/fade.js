@@ -1,5 +1,4 @@
 (function () {
-  // const one = document.querySelector(".one")
   const imageFadeIn = document.querySelectorAll(".image");
   const sectionFadeIn = document.querySelectorAll(".three");
   const sectionTwoFadeIn = document.querySelectorAll(".two");
@@ -9,10 +8,6 @@
     rootMargin: "0px",
     threshold: 0.05,
   };
-
-  // function animationOnLoad(){
-  //   one.classList.add("animation");
-  // }
 
   function handleIntersection(entries, observer) {
     entries.forEach((entry) => {
@@ -30,9 +25,6 @@
       observer.observe(fadeIn);
     });
   }
-
-  // Wait for the page to fully load before adding initial animations
-  // window.onload = animationOnLoad();
 
   // Observe elements with the class "fade-in" for the scrolling animation
   observeFadeIns(imageFadeIn);

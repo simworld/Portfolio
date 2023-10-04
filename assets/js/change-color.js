@@ -24,7 +24,7 @@ function restoreColor(element) {
   const secondClass = document.querySelector(".nav-item.two");
   const thridClass = document.querySelector(".nav-item.three");
   // const className = element.classList[3];
-  element.style.color = ""; // Restore the default text color
+  element.style.color = "";
   secondClass.style.color = "";
   thridClass.style.color = "";
 }
