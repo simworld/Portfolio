@@ -578,9 +578,9 @@ section.one.error h1 {
 
 /* PROJECTs & BLOG*/
 
-.no-scrolling {
+/* .no-scrolling {
   overflow: hidden;
-}
+} */
 .nav-item.projects {
   line-height: 1;
 }
