@@ -461,7 +461,9 @@ section.one.error h1 {
 /* .no-scrolling {
   overflow: hidden;
 } */
-
+.no-overflow {
+  overflow-x: hidden;
+}
 .nav-item.projects {
   line-height: 1;
 }
