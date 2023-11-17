@@ -1,9 +1,16 @@
 "use strict";
+
+// Function to change the color of the element and other related elements
 function changeColor(element) {
+  // Check if the device is a mobile device
   const isMobile = "ontouchstart" in window;
+
+  // Proceed only if not a mobile device
   if (!isMobile) {
+    // Get the fourth class from the element's classList
     const className = element.classList[3];
 
+    // Select elements with specific classes for color change
     const secondClass = document.querySelector(
       ".nav-item.two.home.animation-initial"
     );
@@ -11,8 +18,9 @@ function changeColor(element) {
       ".nav-item.three.home.animation-initial"
     );
 
-    // console.log(className);
+    // Check if the class is "animation-initial"
     if (className == "animation-initial") {
+      // Change colors of the elements
       element.style.color = "var(--snow)";
       secondClass.style.color = "var(--orange)";
       thirdClass.style.color = "var(--orange)";
@@ -20,11 +28,14 @@ function changeColor(element) {
   }
 }
 
+// Function to restore the color of the element and other related elements
 function restoreColor(element) {
+  // Select elements with specific classes for color restoration
   const secondClass = document.querySelector(".nav-item.two");
-  const thridClass = document.querySelector(".nav-item.three");
-  // const className = element.classList[3];
+  const thirdClass = document.querySelector(".nav-item.three");
+
+  // Reset the color of the elements
   element.style.color = "";
   secondClass.style.color = "";
-  thridClass.style.color = "";
+  thirdClass.style.color = "";
 }
