@@ -1,3 +1,4 @@
+"use strict";
 // Event listener for scrolling
 window.addEventListener("scroll", () => {
   // Get the current scroll position (cross-browser support)

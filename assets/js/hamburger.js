@@ -1,3 +1,4 @@
+"use strict";
 // Event listener for scrolling
 window.addEventListener("scroll", function () {
   // Select the header and the element with the class "bouncing"

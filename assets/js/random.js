@@ -1,3 +1,4 @@
+"use strict";
 // Function to set a random background image for an element with the ID "home"
 function randomBackground() {
   // Array of background image URLs
