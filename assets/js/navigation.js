@@ -26,19 +26,19 @@ document.addEventListener("DOMContentLoaded", function () {
         switch (index) {
           case 0:
             newLink.textContent = "About";
-            newLink.href = "/html/about.html";
+            newLink.href = "html/about.html";
             break;
           case 1:
             newLink.textContent = "Projects";
-            newLink.href = "/html/projects.html";
+            newLink.href = "html/projects.html";
             break;
           case 2:
             newLink.textContent = "Contact";
-            newLink.href = "/html/contact.html";
+            newLink.href = "html/contact.html";
             break;
           case 3:
             newLink.textContent = "Blog";
-            newLink.href = "/html/blog.html";
+            newLink.href = "html/blog.html";
             break;
           default:
             break;

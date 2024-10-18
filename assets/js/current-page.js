@@ -17,9 +17,9 @@ navigationLinks.forEach((link) => {
   }
 
   // Check if the current pathname is "/html/projects/dimos.html"
-  if (pathname === "/html/projects/dimos.html") {
+  if (pathname === "html/projects/dimos.html") {
     // Select the 'Projects' link and add the "current" class to highlight it
-    const workLink = document.querySelector("a[href='/html/projects.html']");
+    const workLink = document.querySelector("a[href='html/projects.html']");
     if (workLink) {
       workLink.classList.add("current");
     }
