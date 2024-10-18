@@ -104,7 +104,7 @@ nav {
 /* HOME */
 
 #home {
-  background-image: url("assets/images/background.webp");
+  background-image: url("../assets/images/background.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -720,7 +720,7 @@ section.two.contact::after {
 }
 
 section.two.contact::before {
-  background-image: url("assets/images/mountain.webp");
+  background-image: url("../assets/images/mountain.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -728,7 +728,7 @@ section.two.contact::before {
 }
 
 section.two.contact::after {
-  background-image: url("assets/images/background.webp");
+  background-image: url("../assets/images/background.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
