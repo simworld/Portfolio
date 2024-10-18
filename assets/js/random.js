@@ -3,7 +3,7 @@
 function randomBackground() {
   // Array of background image URLs
   const backgroundImages = [
-    "../images/background.webp",
+    "/portfolio/assets/images/background.webp",
     "../images/background2.webp",
   ];
 
