@@ -3,8 +3,8 @@
 function randomBackground() {
   // Array of background image URLs
   const backgroundImages = [
-    "../portfolio/assets/images/background.webp",
-    "../images/background2.webp",
+    "/portfolio/assets/images/background.webp",
+    "/portfolio/assets/images/background2.webp",
   ];
 
   // Generate a random number to select a random background image from the array
