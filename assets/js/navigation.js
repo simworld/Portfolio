@@ -38,7 +38,9 @@ document.addEventListener("DOMContentLoaded", function () {
             break;
           case 3:
             newLink.textContent = "Blog";
-            newLink.href = "html/blog.html";
+            // newLink.href = "html/blog.html";
+            newLink.href = "404.html";
+
             break;
           default:
             break;
